@@ -1,14 +1,43 @@
-<html>
-   <head>
-      <title>Leads</title>
-   </head>
-   <body>
-      <div>
-         <h1>Ini Halaman Leads</h1>
-      </div>
-      <div>
-         <a href="index.html">Ke halaman Index</a><br>
-         <a href="detail_lead.html">Ke halaman Detail Lead</a>
-      </div>
-   </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Leads</title>
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+   <div class="container">
+      <h1 class="mt-5">Leads</h1>
+      <table class="table table-striped mt-3">
+         <thead>
+            <tr>
+               <th scope="col">ID</th>
+               <th scope="col">Name</th>
+               <th scope="col">Email</th>
+               <th scope="col">Action</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <th scope="row">1</th>
+               <td>John Doe</td>
+               <td>john@example.com</td>
+               <td><a href="lead-detail.html?id=1" class="btn btn-info">View Details</a></td>
+            </tr>
+            <tr>
+               <th scope="row">2</th>
+               <td>Jane Doe</td>
+               <td>jane@example.com</td>
+               <td><a href="lead-detail.html?id=2" class="btn btn-info">View Details</a></td>
+            </tr>
+            <!-- Add more leads as necessary -->
+         </tbody>
+      </table>
+      <a href="index.html" class="btn btn-secondary">Back to Home</a>
+   </div>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
